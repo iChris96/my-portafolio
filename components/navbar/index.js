@@ -2,6 +2,14 @@ import Link from "next/link";
 import styles from "../../styles/Navbar.module.css";
 import { BsGithub } from "react-icons/bs";
 
+const LinkItem = (props) => {
+  return (
+    <li className={styles.li}>
+      <Link {...props}></Link>
+    </li>
+  );
+};
+
 const NavBar = () => {
   return (
     <nav className={styles.nav}>
@@ -11,21 +19,11 @@ const NavBar = () => {
         </a>
       </div>
       <ul className={styles.ul}>
-        <li className={styles.li}>
-          <Link href="/">Home</Link>
-        </li>
-        <li className={styles.li}>
-          <Link href="/skills">Skills</Link>
-        </li>
-        <li className={styles.li}>
-          <Link href="/projects">Projects</Link>
-        </li>
-        <li className={styles.li}>
-          <Link href="/about">About</Link>
-        </li>
-        <li className={styles.li}>
-          <Link href="/contact">Contact</Link>
-        </li>
+        <LinkItem href="/">Home</LinkItem>
+        <LinkItem href="/skills">Skills</LinkItem>
+        <LinkItem href="/projects">Projects</LinkItem>
+        <LinkItem href="/about">About</LinkItem>
+        <LinkItem href="/contact">Contact</LinkItem>
       </ul>
     </nav>
   );
