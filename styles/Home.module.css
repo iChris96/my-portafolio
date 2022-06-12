@@ -1,28 +1,29 @@
 .container {
   min-height: 70vh;
-  padding: 3rem 2rem;
+  padding: 3rem 0rem;
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+.start_section {
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+.img_container {
+  display: none;
 }
 
 @media screen and (min-width: 800px) {
   .container {
     width: 100%;
     display: inline-block;
-    padding: 0.4rem 16rem;
+  }
+
+  .img_container {
+    display: block;
+  }
+
+  .start_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 }

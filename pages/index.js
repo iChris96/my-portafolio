@@ -1,6 +1,10 @@
 import Head from "next/head";
 import NavBar from "../components/navbar";
 import styles from "../styles/Home.module.css";
+import Image from "next/image";
+import Logo from "../public/me.png";
+import Text from "../components/text";
+import Footer from "../components/footer";
 
 export default function Main() {
   return (
@@ -15,23 +19,43 @@ export default function Main() {
 
       <main>
         <div className={styles.container}>
-          <section>
+          <section className={styles.start_section}>
             <div>
-              <h1 className={styles.title}>Christopher Larios</h1>
-              <p className={styles.subtitle}>
-                Software Engineer | Car enthusiast | Coffee Lover
-              </p>
+              <div>
+                <Text.title>Christopher Larios</Text.title>
+                <Text.subtitle>
+                  Software Engineer | Car enthusiast | Coffee Lover
+                </Text.subtitle>
+              </div>
+              <div>
+                <Text>
+                  Hey there, This is Christopher. I am a software engineer who
+                  love <br />
+                  work with React, NodeJs and MoongoDB.
+                </Text>
+              </div>
             </div>
-            <div>
-              <p>
-                this is a text
-                loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem
-              </p>
+
+            <div className={styles.img_container}>
+              <Image
+                src={Logo}
+                alt="Picture of the author"
+                width={200}
+                height={200}
+              />
             </div>
           </section>
         </div>
       </main>
-      <footer className={styles.footer}>Footer</footer>
+
+      <footer>
+        <Footer>
+          <Footer.item title="MAIL ME" subtitle="christopherx10x@gmail.com" />
+          <Footer.item title="CHAT">
+            <a href="https://wa.me/523312436505">WhatsApp</a>
+          </Footer.item>
+        </Footer>
+      </footer>
     </div>
   );
 }
