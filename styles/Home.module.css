@@ -4,10 +4,38 @@
 }
 
 .start_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0rem 5rem 0rem;
+}
+
+.start_title_container {
+  line-height: 1.2rem;
+}
+
+.start_content_container {
+  margin-top: 2rem;
 }
 
 .img_container {
   display: none;
+}
+
+.bar {
+  width: 64px;
+  height: 6px;
+  border-radius: 10px;
+  background: linear-gradient(
+    270deg,
+    rgb(19, 173, 199) 0%,
+    rgb(148, 93, 214) 100%
+  );
+}
+
+.skills_section {
+  padding: 1rem 0rem 5rem 0rem;
 }
 
 @media screen and (min-width: 800px) {
@@ -20,10 +48,7 @@
     display: block;
   }
 
-  .start_section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  .start_title_container {
+    line-height: 0.5rem;
   }
 }

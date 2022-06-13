@@ -5,6 +5,7 @@ import Image from "next/image";
 import Logo from "../public/me.png";
 import Text from "../components/text";
 import Footer from "../components/footer";
+import Skills from "../components/skills";
 
 export default function Main() {
   return (
@@ -19,15 +20,16 @@ export default function Main() {
 
       <main>
         <div className={styles.container}>
+          <div className={styles.bar} />
           <section className={styles.start_section}>
             <div>
-              <div>
+              <div className={styles.start_title_container}>
                 <Text.title>Christopher Larios</Text.title>
                 <Text.subtitle>
                   Software Engineer | Car enthusiast | Coffee Lover
                 </Text.subtitle>
               </div>
-              <div>
+              <div className={styles.start_content_container}>
                 <Text>
                   Hey there, This is Christopher. I am a software engineer who
                   love <br />
@@ -45,6 +47,31 @@ export default function Main() {
               />
             </div>
           </section>
+          <div className={styles.bar} />
+          <section className={styles.skills_section} id="skills">
+            <div>
+              <Text.title>Skills</Text.title>
+              <Text>
+                I've worked with multiple technologies as a developer to develop
+                & maintain my own and external projects.
+              </Text>
+            </div>
+            <div>
+              <Skills>
+                <Skills.item title="React" />
+                <Skills.item title="Typescript" />
+                <Skills.item title="Javascript" />
+                <Skills.item title="MongoDB" />
+                <Skills.item title="NodeJS" />
+                <Skills.item title="React Native" />
+                <Skills.item title="Kotlin" />
+                <Skills.item title="Git" />
+                <Skills.item title="NextJS" />
+                <Skills.item title="CSS" />
+              </Skills>
+            </div>
+          </section>
+          <div className={styles.bar} />
         </div>
       </main>
 
