@@ -129,7 +129,11 @@ export default function Main() {
 
       <footer>
         <Footer>
-          <Footer.item title="MAIL ME" subtitle="christopherx10x@gmail.com" />
+          <Footer.item title="MAIL ME">
+            <a href="mailto: christopherx10x@gmail.com">
+              christopherx10x@gmail.com
+            </a>
+          </Footer.item>
           <Footer.item title="CHAT">
             <a href="https://wa.me/523312436505">WhatsApp</a>
           </Footer.item>
