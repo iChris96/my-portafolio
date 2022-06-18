@@ -28,8 +28,10 @@ Projects.item = ({
       <div className={styles.footer_container}>
         <div className={styles.techArray_container}>
           {techArray &&
-            techArray.map((it) => (
-              <p className={styles.techArray_item}>{it}</p>
+            techArray.map((it, idx) => (
+              <p key={idx} className={styles.techArray_item}>
+                {it}
+              </p>
             ))}
         </div>
         <span className={styles.repoTitle}>
@@ -45,7 +47,7 @@ Projects.item = ({
 
 Projects.item.propTypes = {
   title: PropTypes.string.isRequired,
-  subtitle: PropTypes.func,
+  subtitle: PropTypes.string,
   description: PropTypes.string,
   repoUrl: PropTypes.string,
   // children: PropTypes.node.isRequired,

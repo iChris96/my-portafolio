@@ -7,6 +7,7 @@ import Text from "../components/text";
 import Footer from "../components/footer";
 import Skills from "../components/skills";
 import Projects from "../components/projects";
+import Journey from "../components/journey";
 
 export default function Main() {
   return (
@@ -32,8 +33,8 @@ export default function Main() {
               </div>
               <div className={styles.start_content_container}>
                 <Text>
-                  Hey there, This is Christopher. I am a software engineer who
-                  love <br />
+                  Hey there, this is Chris. I am a software engineer who love{" "}
+                  <br />
                   work with React, NodeJs and MoongoDB.
                 </Text>
               </div>
@@ -124,6 +125,36 @@ export default function Main() {
               </Projects>
             </div>
           </section>
+          <div className={styles.bar} />
+          <section className={styles.journey_section} id="journey">
+            <div>
+              <Text.title>My Journey</Text.title>
+              <Text>
+                In my journey to date, I have learned a great deal about
+                development and life in general.
+              </Text>
+            </div>
+            <div>
+              <Journey>
+                <Journey.item year="2016" title="Uni">
+                  Started my journey as a computer engineer student.
+                </Journey.item>
+                <Journey.item year="2019">
+                  Got an intership as android developer at Bosch Company.
+                </Journey.item>
+                <Journey.item year="2020">
+                  End my journey as Computer Science student.
+                </Journey.item>
+                <Journey.item year="2020">
+                  Started my journey as a full time software developer at Bosch
+                  Company.
+                </Journey.item>
+                <Journey.item year="2021">
+                  Started a new journey as software developer at Wizeline.
+                </Journey.item>
+              </Journey>
+            </div>
+          </section>
         </div>
       </main>
 
@@ -138,6 +169,11 @@ export default function Main() {
             <a href="https://wa.me/523312436505">WhatsApp</a>
           </Footer.item>
         </Footer>
+        <div style={{ textAlign: "center" }}>
+          <p>
+            Designed with <span style={{ color: "red" }}>♥</span> by Chris
+          </p>
+        </div>
       </footer>
     </div>
   );

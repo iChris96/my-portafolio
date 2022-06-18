@@ -38,6 +38,14 @@
   padding: 1rem 0rem 5rem 0rem;
 }
 
+.projects_section {
+  padding: 1rem 0rem 5rem 0rem;
+}
+
+.journey_section {
+  padding: 1rem 0rem 5rem 0rem;
+}
+
 @media screen and (min-width: 800px) {
   .container {
     width: 100%;
