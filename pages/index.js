@@ -28,7 +28,10 @@ export default function Main() {
               <div className={styles.start_title_container}>
                 <Text.title>Christopher Larios</Text.title>
                 <Text.subtitle>
-                  Software Engineer | Car enthusiast | Coffee Lover
+                  Software Engineer&nbsp;<span>&#128187;</span> | Car
+                  enthusiast&nbsp;
+                  <span>&#128663;</span> | Coffee Lover&nbsp;
+                  <span>&#9749;</span>
                 </Text.subtitle>
               </div>
               <div className={styles.start_content_container}>
