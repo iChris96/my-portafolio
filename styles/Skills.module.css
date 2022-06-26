@@ -9,7 +9,7 @@
 .item {
   display: inline-block;
   padding: 0.8rem;
-  border: 2px solid yellow;
+  border: 2px solid var(--clr-tertiary);
   border-radius: 0.5rem;
   font-size: 0.8rem;
 }

@@ -1,7 +1,18 @@
 .text {
-  color: rgb(201, 201, 201);
+  color: var(--clr-gray-600);
 }
 
 .subtitle {
-  color: rgb(214, 214, 214);
+  color: var(--clr-secondary);
+}
+
+.title {
+  color: var(--clr-primary);
+  line-height: 1.2rem;
+}
+
+@media screen and (min-width: 800px) {
+  .title {
+    line-height: 0.3rem;
+  }
 }

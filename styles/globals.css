@@ -1,3 +1,18 @@
+:root {
+  --clr-primary: #fff;
+  --clr-secondary: var(--clr-gray-100);
+  --clr-tertiary: yellow;
+  --clr-background: #202137;
+  --clr-white: #fff;
+  --clr-gray-100: rgb(214, 214, 214);
+  --clr-gray-600: rgb(201, 201, 201);
+  --clr-black: #000;
+  --fn-base: 20px;
+  --fs-h1: 36px;
+  --fs-h2: 32px;
+  --fs-h3: 28px;
+}
+
 html,
 body {
   padding: 0.4rem 2rem;
@@ -6,7 +21,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background-color: #202137;
   color: #fff;
-  font-size: 20px;
+  font-size: var(--fn-base);
   scroll-behavior: smooth;
 }
 
