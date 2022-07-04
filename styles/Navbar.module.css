@@ -16,26 +16,26 @@
 }
 
 .li {
-  font-size: 1rem;
+  font-size: 0.9rem;
   padding: 0.2rem 0.7rem;
   border-radius: 0.375rem;
   color: var(--clr-primary);
 }
 
 .li:hover {
-  background-color: #292944;
+  background-color: var(--clr-background-light);
   border-radius: 0.2rem;
   cursor: pointer;
 }
 
 .icon_container {
-  margin: 40px 0 40px 0;
+  /* margin: 1rem 0 1rem 0; */
 }
 
 .icon_container a {
   display: block;
   padding: 0.7rem;
-  background-color: #292944;
+  background-color: var(--clr-background-light);
   border-radius: 0.5rem;
 }
 
@@ -84,6 +84,7 @@
     text-align: left;
     border-bottom-style: none;
     padding: 0.5rem 0.8rem;
+    font-size: 1rem;
   }
 }
 

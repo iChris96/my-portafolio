@@ -1,7 +1,11 @@
 import styles from "/styles/Text.module.css";
 
 const Text = ({ children, ...delegated }) => {
-  return <p className={styles.text}>{children}</p>;
+  return (
+    <p className={styles.text} {...delegated}>
+      {children}
+    </p>
+  );
 };
 
 Text.title = ({ children }) => <h1 className={styles.title}>{children}</h1>;

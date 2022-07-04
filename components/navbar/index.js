@@ -24,10 +24,9 @@ const NavBar = () => {
       </div>
       <ul className={styles.ul}>
         <LinkItem href="/">Home</LinkItem>
-        <LinkItem href="#skills">Skills</LinkItem>
-        <LinkItem href="#projects">Projects</LinkItem>
-        <LinkItem href="#journey">My Journey</LinkItem>
-        <LinkItem href="/contact">Contact</LinkItem>
+        <LinkItem href="/#journey">My Journey</LinkItem>
+        <LinkItem href="/#skills">Skills</LinkItem>
+        <LinkItem href="/projects">Projects</LinkItem>
       </ul>
     </nav>
   );

@@ -3,6 +3,8 @@
   --clr-secondary: var(--clr-gray-100);
   --clr-tertiary: yellow;
   --clr-background: #202137;
+  --clr-background-dark: #19192e;
+  --clr-background-light: #292944;
   --clr-white: #fff;
   --clr-gray-100: rgb(214, 214, 214);
   --clr-gray-600: rgb(201, 201, 201);
