@@ -22,27 +22,29 @@ const ProjectsPage = () => {
               techArray={["React", "NextJS", "Javascript"]}
             >
               This was my personal portfolio website that has all my work and
-              project experience, including my resume. It used to be my main
-              portfolio before deploying this current portfolio.
+              project experience, including my resume.
             </Projects.item>
             <Projects.item
               title="MetroSmart Server"
               subtitle="Route recommendation system based in prediction
-                  of influx of people in metro stations"
+                  of people influx in metro stations - API"
               techArray={["NodeJS", "Typescript", "MongoDB"]}
               repoTitle="iChris96/MetroSmart_Backend"
               repoUrl="https://github.com/iChris96/MetroSmart_Backend/tree/master"
             >
-              This is the description
+              This is an API who it responsible for serving the mobile application (or any other client) handling 
+              connection to the database, running algorithms, provide metro station locations and user authorization.
             </Projects.item>
             <Projects.item
               title="MetroSmart App"
-              subtitle="Android with kotlin app"
+              subtitle="Route recommendation system based in prediction
+              of people influx in metro stations - Android App"
               repoTitle="iChris96/MetroSmart_Android"
               repoUrl="https://github.com/iChris96/MetroSmart_Android/tree/develop"
               techArray={["Android", "Kotlin"]}
             >
-              this is a very large description
+              This is the Android App client who consumes the MetroSmart server. Is used by the users to see the metro stations locations and then build a route 
+              based in prediction of people influx by stations.
             </Projects.item>
             <Projects.item
               title="Movies App"
@@ -51,7 +53,7 @@ const ProjectsPage = () => {
               repoUrl="https://github.com/iChris96/movies-app/tree/feature/auth"
               techArray={["NodeJS", "Typescript", "MYSQL"]}
             >
-              this is a very large description
+              This is an API to get information about films, cast, taglines, plots, crew, reviews, ratings and much more.
             </Projects.item>
           </Projects>
         </div>
