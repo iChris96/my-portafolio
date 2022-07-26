@@ -3,6 +3,9 @@ import Layout from "/components/layout";
 import Projects from "/components/projects";
 import Text from "/components/text";
 import styles from "/styles/ProjectsPage.module.css";
+import Link from "next/link";
+import Button from "/components/button";
+import { GrFormPreviousLink } from 'react-icons/gr';
 
 const ProjectsPage = () => {
   return (
@@ -32,7 +35,7 @@ const ProjectsPage = () => {
               repoTitle="iChris96/MetroSmart_Backend"
               repoUrl="https://github.com/iChris96/MetroSmart_Backend/tree/master"
             >
-              This is an API who it responsible for serving the mobile application (or any other client) handling 
+              This is an API who it responsible for serving the mobile application (or any other client) handling
               connection to the database, running algorithms, provide metro station locations and user authorization.
             </Projects.item>
             <Projects.item
@@ -43,7 +46,7 @@ const ProjectsPage = () => {
               repoUrl="https://github.com/iChris96/MetroSmart_Android/tree/develop"
               techArray={["Android", "Kotlin"]}
             >
-              This is the Android App client who consumes the MetroSmart server. Is used by the users to see the metro stations locations and then build a route 
+              This is the Android App client who consumes the MetroSmart server. Is used by the users to see the metro stations locations and then build a route
               based in prediction of people influx by stations.
             </Projects.item>
             <Projects.item
@@ -57,6 +60,13 @@ const ProjectsPage = () => {
             </Projects.item>
           </Projects>
         </div>
+      </section>
+      <section className={styles.last_section}>
+        <Link href="/">
+          <Button
+            leftIcon={<GrFormPreviousLink className={styles.previousIcon} />}
+          >Go Back Home</Button>
+        </Link>
       </section>
     </Layout>
   );

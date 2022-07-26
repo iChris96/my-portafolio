@@ -7,6 +7,7 @@ import Journey from "/components/journey";
 import Layout from "/components/layout";
 import Button from "/components/button";
 import Link from "next/link";
+import { GrFormNextLink } from 'react-icons/gr';
 
 export default function Main() {
   return (
@@ -91,7 +92,9 @@ export default function Main() {
           <div className={styles.bar} />
           <section className={styles.projects_section} id="projects">
             <Link href="/projects">
-              <Button>My Projects &gt; </Button>
+              <Button
+                rightIcon={<GrFormNextLink className={styles.nextIcon} />}
+              >My Projects</Button>
             </Link>
           </section>
         </div>
